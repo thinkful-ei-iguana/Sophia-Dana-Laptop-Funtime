@@ -5,7 +5,7 @@ import Total from "./Total";
 export default function Summary(props) {
   const summary = Object.keys(props.selected).map((feature, idx) => {
     const featureHash = feature + "-" + idx;
-    const selectedOption = this.state.selected[feature];
+    const selectedOption = props.selected[feature];
 
     return (
       <SummaryOption
